@@ -4,7 +4,20 @@
 	}
 
 	.menuButton {
-		margin: 5px 10px;
+		margin: 5px 5px;
 		font-size: 0.8em
+	}
+
+	.footerContent {
+		padding: 10px 0px;
+	}
+
+	.contentArea {
+		text-align: center;
+		padding: 150px 0px;
+	}
+
+	.oneGame {
+		width: 80%;
 	}
 }

@@ -3,6 +3,11 @@
 	src: url('../fonts/Champagne & Limousines Bold.ttf');
 }
 
+@font-face {
+	font-family: hand;
+	src: url('../fonts/angelina.ttf');
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -12,7 +17,7 @@
 }
 
 body {
-	background-color: #d2e0e0;
+	background-color: #babac4;
 	min-height: 100%;
 	width: 100%;
 	position: relative;
@@ -125,43 +130,37 @@ html {
 
 .contentArea {
 	position: relative;
-	top: 100px;
+	padding: 100px 0px;
+	position: relative;
 }
 
-.div1 {
-	width: 25%;
-	height: 200px;
-	background-color: red;
+.oneGame{
+	width: 28.33%;
+	height: auto;
 	display: inline-block;
-	float: left;
-	margin: 2%;
+	margin: 2.5%;
+	background-color: rgba(255,255,255,0.6);
+	position: relative;
+	padding: 10px;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	transition: all 0.2s;
 }
 
-.div2 {
-	width: 25%;
-	height: 200px;
-	background-color: yellow;
-	display: inline-block;
-	float: left;
-	margin: 2%;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	transition: all 0.2s;
+.oneGame:hover {
+	transform: scale(1.1);
 }
 
-.div3 {
-	width: 25%;
-	height: 200px;
-	background-color: green;
-	display: inline-block;
-	float: left;
-	margin: 2%;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	transition: all 0.2s;
+.oneGame .image img {
+	width: 100%;
+}
+
+.details {
+	margin-top: 10px;
+	font-size: 1.5em;
+	color: rgb(50,50,60);
+	text-align: center;
+	font-family: hand;
 }
 
 .footer {
