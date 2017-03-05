@@ -1,7 +1,116 @@
+@font-face {
+	font-family: champagne;
+	src: url('../fonts/Champagne & Limousines Bold.ttf');
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+body {
+	background-color: #d2e0e0;
+}
+
+.menu {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: rgb(50,50,60);
+	text-align: center;
+}
+
+.buttons {
+	padding: 20px 20px;
+}
+
+.menuButton {
+	font-family: champagne;
+	padding: 7px 30px;
+	background-color: rgb(50,50,60);
+	outline: none;
+	border-radius: 10px;
+	font-size: 1em;
+	margin: 0px 10px;
+	cursor: pointer;
+	-webkit-transition: background-color 0.2s, color 0.2s;
+	-moz-transition: background-color 0.2s, color 0.2s;
+	transition: background-color 0.2s, color 0.2s;
+	position: relative;
+}
+
+.menuButton.active {
+	color: rgb(71,209,71);
+	border: 2px solid rgb(71,209,71);
+}
+
+.menuButton.active:hover {
+	background-color: rgb(71,209,71);
+	color: rgb(50,50,60);
+}
+
+.menuButton.inactive {
+	color: rgb(255,128,128);
+	border: 2px solid rgb(255,128,128);
+}
+
+.menuButton.inactive:hover {
+	background-color: rgb(255,128,128);
+	color: rgb(50,50,60);
+}
+
+.colorfulLine {
+	width: 100%;
+	height: 5px;
+}
+
+.linePart {
+	width: 10%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.linePart1 {
+	background-color: #004466;
+}
+
+.linePart2 {
+	background-color: #75a3a3;
+}
+
+.linePart3 {
+	background-color: #2d8659;
+}
+
+.linePart4 {
+	background-color: #99994d;
+}
+
+.linePart5 {
+	background-color: #990000;
+}
+
+.linePart6 {
+	background-color: #bf4040;
+}
+
+.linePart7 {
+	background-color: #c6538c;
+}
+
+.linePart8 {
+	background-color: #ffccef;
+}
+
+.linePart9 {
+	background-color: #6666ff;
+}
+
+.linePart10 {
+	background-color: #000033;
 }

@@ -1,0 +1,10 @@
+@media (max-width: 800px){
+	.buttons {
+		padding: 20px 10px;
+	}
+
+	.menuButton {
+		margin: 5px 10px;
+		font-size: 0.8em
+	}
+}
