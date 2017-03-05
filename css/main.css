@@ -13,6 +13,13 @@
 
 body {
 	background-color: #d2e0e0;
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+html {
+	height: 100%;
 }
 
 .menu {
@@ -22,6 +29,7 @@ body {
 	width: 100%;
 	background-color: rgb(50,50,60);
 	text-align: center;
+	z-index: 10;
 }
 
 .buttons {
@@ -113,4 +121,75 @@ body {
 
 .linePart10 {
 	background-color: #000033;
+}
+
+.contentArea {
+	position: relative;
+	top: 100px;
+}
+
+.div1 {
+	width: 25%;
+	height: 200px;
+	background-color: red;
+	display: inline-block;
+	float: left;
+	margin: 2%;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.div2 {
+	width: 25%;
+	height: 200px;
+	background-color: yellow;
+	display: inline-block;
+	float: left;
+	margin: 2%;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.div3 {
+	width: 25%;
+	height: 200px;
+	background-color: green;
+	display: inline-block;
+	float: left;
+	margin: 2%;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background-color: rgb(50,50,60);
+	color: white;
+	font-family: champagne;
+}
+
+.footerContent {
+	padding: 10px 20px 10px 20px;
+	font-size: 1em;
+	color: rgba(255,255,255,0.6);
+	text-align: center;
+}
+
+.footerContent img {
+	height: 40px;
+	margin: 5px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.footerContent img:hover {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	transform: rotate(360deg);
 }
