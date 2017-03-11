@@ -13,15 +13,30 @@
 			<div class = "linePart linePart1"></div><div class = "linePart linePart2"></div><div class = "linePart linePart3"></div><div class = "linePart linePart4"></div><div class = "linePart linePart5"></div><div class = "linePart linePart6"></div><div class = "linePart linePart7"></div><div class = "linePart linePart8"></div><div class = "linePart linePart9"></div><div class = "linePart linePart10"></div>
 		</div>
 		<div class = "buttons">
-			<button class = "menuButton active"> All </button>
-			<button class = "menuButton inactive"> Transitions </button>
-			<button class = "menuButton inactive"> Menu </button>
-			<button class = "menuButton inactive"> Loaders </button>
-			<button class = "menuButton inactive"> WebGL/Canvas </button>
+			<button class = "menuButton active" data-category = "all"> All </button>
+			<button class = "menuButton inactive" data-category = "transition"> Transitions </button>
+			<button class = "menuButton inactive" data-category = "menu"> Menu </button>
+			<button class = "menuButton inactive" data-category = "loader"> Loaders </button>
+			<button class = "menuButton inactive" data-category = "webgl"> WebGL/Canvas </button>
 		</div>
 	</div>
 
-	<div class = "contentArea"><div class = "oneGame">
+	<div class = "contentArea"><div class = "oneGame visible" data-category = "transition">
+			<div class = "image"><img src = "./images/1.jpg"></div>
+			<div class = "details">
+				<h4> A very nice name </h4>
+			</div>
+		</div><div class = "oneGame visible" data-category = "transition">
+			<div class = "image"><img src = "./images/1.jpg"></div>
+			<div class = "details">
+				<h4> A very nice name </h4>
+			</div>
+		</div><div class = "oneGame visible" data-category = "loader">
+			<div class = "image"><img src = "./images/1.jpg"></div>
+			<div class = "details">
+				<h4> A very nice name </h4>
+			</div>
+		</div><div class = "oneGame visible" data-category = "menu">
 			<div class = "image"><img src = "./images/1.jpg"></div>
 			<div class = "details">
 				<h4> A very nice name </h4>

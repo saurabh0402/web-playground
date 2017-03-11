@@ -137,7 +137,6 @@ html {
 .oneGame{
 	width: 28.33%;
 	height: auto;
-	display: inline-block;
 	margin: 2.5%;
 	background-color: rgba(255,255,255,0.6);
 	position: relative;
@@ -145,6 +144,14 @@ html {
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	transition: all 0.2s;
+}
+
+.oneGame.visible {
+	display: inline-block;
+}
+
+.oneGame.hidden {
+	display: none;
 }
 
 .oneGame:hover {
