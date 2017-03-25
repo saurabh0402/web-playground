@@ -14,10 +14,19 @@
 
 	.contentArea {
 		text-align: center;
-		padding: 150px 0px;
+		padding: 20px 0px 90px 0px;
 	}
 
 	.oneGame {
 		width: 80%;
+		margin: 20px 0px;
+	}
+
+	.menu {
+		position: relative;
+	}
+
+	.footerContent img {
+		height: 30px;
 	}
 }
