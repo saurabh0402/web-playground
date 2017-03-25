@@ -1,5 +1,5 @@
 (function(){
-	var li = document.getElementsByClassName("menuItem");
+	var li = document.getElementsByClassName("menuItem"), history = [], cur;
 
 	[].forEach.call(li, function(item){
 		item.addEventListener("click", function(){
@@ -8,7 +8,9 @@
 
 			if(submenu && submenu.trim()){
 				this.parentNode.parentNode.className = "hiddenMenu";
-				document.getElementById(submenu).className = "";
+				history.push(this.parentNode.parentNode);
+				cur = document.getElementById(submenu);
+				cur.className = '';
 			}
 
 			else if(content && content.trim()){
@@ -22,6 +24,15 @@
 			}
 
 		}, false);
+	});
+
+	document.getElementsByClassName("back")[0].addEventListener("click", function(){
+		if(history.length){
+			var p = history.pop();
+			cur.className = "hiddenMenu";
+			p.className = "";
+			cur = p;
+		}
 	});
 
 })();
