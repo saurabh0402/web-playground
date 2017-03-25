@@ -1,0 +1,45 @@
+@font-face {
+	font-family: champagne;
+	src: url('../fonts/Champagne & Limousines Bold.ttf');
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.left {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 30%;
+	background-color: rgb(64,64,64);
+}
+
+.menuContainer {
+	padding: 20px;
+	font-family: champagne;
+}
+
+.left .logo {
+	font-family: champagne;
+	color: rgb(200,200,200);
+	font-size: 2em;
+	text-align: center;
+	padding: 20px 0px;
+	border-bottom: 1px solid rgb(200,200,200);
+}
+
+.right {
+	width: 70%;
+	background-color: rgb(230,230,230);
+	position: fixed;
+	left: 30%;
+	top: 0px;
+	bottom: 0px;
+	overflow-y: auto;
+}
