@@ -52,6 +52,26 @@
 	cursor: pointer;
 	color: rgb(170,170,170);
 	padding: 10px;
+	position: relative;
+	left: 0%;	
+}
+
+.menuItem.goBack {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+	left: -200%;
+}
+
+.menuItem.goToRight {
+	left: 300%;
+}
+
+.menuItem.animatedCenter {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+	left: 0%;
 }
 
 .menuItem.active {
