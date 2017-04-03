@@ -22,7 +22,7 @@ body {
 
 .cont {
 	width: 100%;
-	padding: 20px;
+	padding: 20px 0px;
 }
 
 .imgCont {
@@ -65,13 +65,47 @@ body {
 
 .clickedImageCont {
 	width: 100%;
-	height: 300px;
+	height: 400px;
 	background-color: rgba(60, 60, 60, 1);
+}
+
+.clickedImageCont .left {
+	width: 40%;
+	display: inline-block;
+	float: left;
+	height: 100%;
+	color: rgb(200,200,200);
+	font-family: title;
+	line-height: 400px;
+	font-size: 3em;
+	text-align: center;
+} 
+
+.clickedImageCont .right {
+	width: 60%;
+	height: 100%;
+	display: inline-block;
+	padding: 40px;
+	float: left;
+	text-align: center;
+}
+
+.clickedImageCont .right img {
+	height: 100%;
 }
 
 @media(max-width: 1024px) {
 	.imgCont {
 		width: 33%;
+	}
+
+	.clickedImageCont {
+		height: 300px;
+	}
+
+	.clickedImageCont .left {
+		font-size: 2em;
+		line-height: 300px;
 	}
 }
 
@@ -79,10 +113,37 @@ body {
 	.imgCont {
 		width: 50%;
 	}
+
+	.clickedImageCont {
+		height: auto;
+		padding: 40px 0px 20px 0px;
+	}
+
+	.clickedImageCont .left {
+		display: block;
+		width: 100%;
+		height: auto;
+		line-height: 1em;
+		float: none;
+	}
+
+	.clickedImageCont .right {
+		display: block;
+		width: 100%;
+		float: none;
+	}
+
+	.clickedImageCont .right img {
+		width: 80%;
+	}
 }
 
 @media(max-width: 480px) {
 	.imgCont {
+		width: 100%;
+	}
+
+	.clickedImageCont .right img {
 		width: 100%;
 	}
 }

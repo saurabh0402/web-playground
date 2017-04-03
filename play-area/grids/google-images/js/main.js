@@ -5,7 +5,11 @@
 
 	var i,
 		cont = document.getElementsByClassName("cont")[0],
-		prev, cur, count = 0, breakPoint;
+		prev, cur, count = 0, breakPoint, prevClicked;
+
+	// Again this should be loaded randomly and can be
+	// different for each image
+	var content = "Some content here :)";
 
 	for(i = 1; i <= 16; i++){
 		var img = new Image();
@@ -48,12 +52,16 @@
 	}
 
 	function setClickedImage(){
+		prevClicked = this;
+
 		var elem = this.nextSibling, 
 			prev = document.getElementsByClassName('clickedImageCont')[0],
 			div, elemToAppend;
 
-		while(elem && (elem.className != 'imgCont' || elem.dataset.id % breakPoint !== 1)){
-			elem = elem.nextSibling;
+		if(breakPoint !== 1) {
+			while(elem && (elem.className != 'imgCont' || elem.dataset.id % breakPoint !== 1)){
+				elem = elem.nextSibling;
+			}
 		}
 
 		if(prev){
@@ -73,10 +81,25 @@
 
 		div.className = "clickedImageCont";
 
+		if(div != prev){
+			var left = document.createElement('div'),
+			right = document.createElement('div');
+			left.className = 'left'; right.className = 'right';
+			var img = new Image();
+			img.src = this.getElementsByTagName('img')[0].src;
+			left.appendChild(document.createTextNode(content));
+			right.appendChild(img);
+			div.appendChild(left);
+			div.appendChild(right);
+		}
+
+		else {
+			div.getElementsByTagName('img')[0].src = this.getElementsByTagName('img')[0].src;
+		}
+		
 		if(!elem){
 			div.dataset.id = 0;
 			cont.appendChild(div);
-			
 		}
 
 		else {
@@ -91,6 +114,8 @@
 
 	window.onresize = function(){
 		setBreakPoint();
+		if(prevClicked)
+			setClickedImage.call(prevClicked);
 	}
 
 })();
