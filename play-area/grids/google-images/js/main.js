@@ -105,6 +105,7 @@
 		else {
 			div.dataset.id = elem.dataset.id;
 			cont.insertBefore(div, elem);
+			this.scrollIntoView();
 		}
 	}
 
