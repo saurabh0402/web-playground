@@ -7,8 +7,8 @@
 		cont = document.getElementsByClassName("cont")[0],
 		prev, cur, count = 0, breakPoint, prevClicked;
 
-	// Again this should be loaded randomly and can be
-	// different for each image
+	// Again this should be loaded dynamically from the server
+	// and can be different for each image
 	var content = "Some content here :)";
 
 	for(i = 1; i <= 16; i++){
@@ -28,6 +28,10 @@
 				divImgData.appendChild(document.createTextNode(img.width + ' X ' + img.height + ' - unsplash.com' ));
 				realCont.appendChild(divImgData);
 				imgCont.appendChild(realCont);
+
+				var imgArrow = document.createElement('div');
+				imgArrow.className = "imgArrow";
+				imgCont.appendChild(imgArrow);
 
 				imgCont.dataset['id'] = count;
 				cont.appendChild(imgCont);
@@ -52,6 +56,9 @@
 	}
 
 	function setClickedImage(){
+		if(prevClicked)
+			prevClicked.getElementsByClassName('imgArrow')[0].className = "imgArrow";
+
 		prevClicked = this;
 
 		var elem = this.nextSibling, 
@@ -107,6 +114,8 @@
 			cont.insertBefore(div, elem);
 			this.scrollIntoView();
 		}
+
+		this.getElementsByClassName("imgArrow")[0].className = "imgArrow shown";
 	}
 
 	window.onload = function(){
