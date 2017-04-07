@@ -40,6 +40,7 @@ body {
 	overflow: hidden;
 	font-family: title;
 	font-size: 0.8em;
+	text-align: left;
 }
 
 .realCont img {
