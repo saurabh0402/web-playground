@@ -2,11 +2,16 @@
 <html>
 <head>
 	<title> Clock! </title>
-	<link rel="stylesheet" type="text/css" href="./css/analog.css">
+	<link rel="stylesheet" type="text/css" href="./css/digital.css">
 	<style>
 		@font-face {
 			font-family: champagne;
 			src: url('./fonts/Champagne & Limousines Bold.ttf');
+		}
+
+		@font-face {
+			font-family: elite;
+			src: url('./fonts/elitedangerbold.ttf');
 		}
 
 		div, body, button, input {
@@ -44,12 +49,19 @@
 	<div class="menu">
 		<a href="./analog.html">Analog</a>&nbsp;|&nbsp;Digital
 	</div>
-	<div class="analog-clock">
-		<div class="analog-seconds"></div>
-		<div class="analog-minutes"></div>
-		<div class="analog-hours"></div>
-		<div class="analog-center"></div>
+	<div class="digital-clock">
+		<div class="digital-hours">
+			<div class="hours-content">00</div>
+		</div>
+		<div class="digital-center">:</div>
+		<div class="digital-minutes">
+			<div class="minutes-content">00</div>
+		</div>
+		<div class="digital-center">:</div>
+		<div class="digital-seconds">
+			<div class="seconds-content">00</div>
+		</div>
 	</div>
-	<script src="./js/analog.js"></script>
+	<script src="./js/digital.js"></script>
 </body>
 </html>
