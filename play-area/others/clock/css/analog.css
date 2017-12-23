@@ -1,0 +1,80 @@
+.analog-clock {
+	position: absolute;
+	left: calc(50% - 250px);
+	top: calc(50% - 250px);
+	display: inline-block;
+	text-align: center;
+	width: 500px;
+	height: 500px;
+	border: 30px solid #a6a6a6;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 340px;
+	background-color: #e6e6e6;
+}
+
+.analog-seconds {
+	display: inline-block;
+	height: 40%;
+	width: 5px;
+	background-color: #a6a6a6;
+	transform-origin: 50% 100%;
+	/*transition: all 0.2s;*/
+	position: absolute;
+	left: calc(50% - 2.5px);
+	top: 10%;
+	border-radius: 10px;
+}
+
+.analog-minutes {
+	display: inline-block;
+	height: 35%;
+	width: 7px;
+	background-color: #8c8c8c;
+	transform-origin: 50% 100%;
+	transition: all 0.2s;
+	position: absolute;
+	left: calc(50% - 3.5px);
+	top: 15%;
+	border-radius: 10px;
+}
+
+.analog-hours {
+	display: inline-block;
+	height: 25%;
+	width: 9px;
+	background-color: #595959;
+	transform-origin: 50% 100%;
+	transition: all 0.2s;
+	position: absolute;
+	left: calc(50% - 4.5px);
+	top: 25%;
+	border-radius: 10px;
+}
+
+.analog-center {
+	width: 20px;
+	height: 20px;
+	background-color: #b30000;
+	border-radius: 20px;
+	position: absolute;
+	left: calc(50% - 10px);
+	top: calc(50% - 10px);
+}
+
+.time-line {
+	width: 5px;
+	height: 50%;
+	top: 0px;
+	background: transparent;
+	position: absolute;
+	top: 0px;
+	left: calc(50% - 2.5px);
+	transform-origin: 50% 100%;
+	padding-top: 2px;
+}
+
+.line {
+	height: 20px;
+	background-color: #b30000;
+}

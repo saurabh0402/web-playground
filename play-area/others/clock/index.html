@@ -2,116 +2,35 @@
 <html>
 <head>
 	<title> Clock! </title>
+	<link rel="stylesheet" type="text/css" href="./css/analog.css">
 	<style>
-
-		.clock {
-			position: relative;
-			left: 200px;
-			top: 200px;
-			display: inline-block;
-			text-align: center;
-			width: 340px;
-			height: 340px;
-			border: 2px solid black;
-			padding: 10px;
+		div, body, button, input {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
 			box-sizing: border-box;
-			border-radius: 340px;
+			padding: 0;
+			margin: 0;
 		}
 
-		.seconds {
-			display: inline-block;
-			height: 150px;
-			width: 5px;
-			background-color: black;
-			transform-origin: 50% 100%;
-			/*transition: all 0.2s;*/
-			position: absolute;
-			left: 167.5px;
-			top: 20px;
+		html {
+			width: 100%;
+			height: 100%;
 		}
 
-		.minutes {
-			display: inline-block;
-			height: 120px;
-			width: 7px;
-			background-color: red;
-			transform-origin: 50% 100%;
-			transition: all 0.2s;
-			position: absolute;
-			left: 166.5px;
-			top: 50px;
-		}
-
-		.hours {
-			display: inline-block;
-			height: 80px;
-			width: 9px;
-			background-color: blue;
-			transform-origin: 50% 100%;
-			transition: all 0.2s;
-			position: absolute;
-			left: 165.5px;
-			top: 90px;
-		}
-
-		.center {
-			width: 30px;
-			height: 30px;
-			background: green;
-			border-radius: 30px;
-			position: absolute;
-			left: 155px;
-			top: 155px;
+		body {
+			width: 100%;
+			height: 100%;
+			text-align: center;
 		}
 	</style>
 </head>
 <body>
-	<div class="clock">
-		<div class="seconds"></div>
-		<div class="minutes"></div>
-		<div class="hours"></div>
-		<div class="center"></div>
+	<div class="analog-clock">
+		<div class="analog-seconds"></div>
+		<div class="analog-minutes"></div>
+		<div class="analog-hours"></div>
+		<div class="analog-center"></div>
 	</div>
-	<script>
-		let hr, min, sec;
-		const divS = document.getElementsByClassName("seconds")[0],
-			  divM = document.getElementsByClassName("minutes")[0],
-			  divH = document.getElementsByClassName("hours")[0];
-
-		function init(){
-			let temp = new Date(Date.now());
-			hr = temp.getHours();
-			min = temp.getMinutes();
-			sec = temp.getSeconds();
-		}
-
-		function update(){
-			++sec;
-
-			if(sec == 60){
-				sec = 0;
-				min += 1;
-				if(min == 60){
-					min = 0;
-					hr += 1;
-				}
-			}
-		}
-
-		function setAngle(){
-			divS.style.transform = "rotate(" + sec*6 + "deg)";
-			divM.style.transform = "rotate(" + min*6 + "deg)";
-			divH.style.transform = "rotate(" + (hr%13)*30 + "deg)";
-		}
-
-		function change(){
-			update();
-			setAngle();
-			setTimeout(change, 1000);
-		}
-
-		init();
-		change();
-	</script>
+	<script src="./js/analog.js"></script>
 </body>
 </html>
