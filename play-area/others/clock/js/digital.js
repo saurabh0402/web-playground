@@ -1,9 +1,9 @@
 (function(){
-	let hr, min, sec, hrSmall, timer;
+	let hr, min, sec, cHr = 0, cMin = 0, cSec = 0;
 	const clock = document.getElementsByClassName("digital-clock")[0],
-		  divS = document.getElementsByClassName("seconds-content")[0],
-		  divM = document.getElementsByClassName("minutes-content")[0],
-		  divH = document.getElementsByClassName("hours-content")[0];
+		  divS = document.getElementsByClassName("seconds-content"),
+		  divM = document.getElementsByClassName("minutes-content"),
+		  divH = document.getElementsByClassName("hours-content");
 
 	function getTime(){
 		let temp = new Date(Date.now());
@@ -13,27 +13,34 @@
 	}
 
 	function setTime(){
-		divS.innerHTML = sec < 10 ? '0'+sec : sec;
-		divM.innerHTML = min < 10 ? '0'+min : min;
-		divH.innerHTML = hr < 10 ? '0'+hr : hr;
+		divS[cSec].innerHTML = sec < 10 ? '0'+sec : sec;
+		divS[cSec].className = "seconds-content active";
+		divS[(cSec+1)%2].className = "seconds-content";
+		divM[cMin].innerHTML = min < 10 ? '0'+min : min;
+		divM[cMin].className = "minutes-content active";
+		divM[(cMin+1)%2].className = "minutes-content";
+		divH[cHr].innerHTML = hr < 10 ? '0'+hr : hr;
+		divH[cHr].className = "hours-content active";
+		divH[(cHr+1)%2].className = "hours-content";
 	}
 
 	function change(){
 		getTime();
+		cSec = (cSec+1)%2;
+		if(sec == 0)
+			cMin = (cMin+1)%2;
+		if(min == 0 && sec == 0)
+			cHr = (cHr+1)%2;
 		setTime();
 		timer = setTimeout(change, 1000);
 	}
 
 	window.onload = function(){
-		getTime();
-		setTime();
 		timer = setTimeout(change, 1000);
 	}
 
 	window.onfocus = function(){
 		clearTimeout(timer);
-		getTime();
-		setTime();
 		timer = setTimeout(change, 1000);
 	}
 

@@ -6,42 +6,40 @@
 	top: calc(50% - 150px);
 }
 
-.digital-seconds {
+.digital-cont {
 	font-size: 20em;
 	display: inline-block;
 	font-family: elite;
 	width: 350px;
+	height: 280px;
+	overflow: hidden;
 	border-radius: 10px;
 	text-align: center;
 	background-color: #26734d;
 	color: white;
-}
-
-.digital-minutes {
-	font-size: 20em;
-	display: inline-block;
-	font-family: elite;
-	width: 350px;
-	border-radius: 10px;
-	text-align: center;
-	background: #26734d;
-	color: white;
-}
-
-.digital-hours {
-	font-size: 20em;
-	display: inline-block;
-	font-family: elite;
-	width: 350px;
-	border-radius: 10px;
-	text-align: center;
-	background: #26734d;
-	color: white;
+	position: relative;
 }
 
 .digital-center {
 	font-size: 20em;
+	position: relative;
+	top: -70px;
 	display: inline-block;
 	font-family: elite;
 	color: #26734d;
+}
+
+.seconds-content,  .minutes-content, .hours-content{
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-transition: all 0.3s;
+	transform: translateY(100%);
+}
+
+.seconds-content.active, .minutes-content.active, .hours-content.active{
+	transform: translateY(0px);
+}
+
+#later.active {
+	transform: translateY(-100%);
 }
