@@ -4,6 +4,11 @@
 	<title> Clock! </title>
 	<link rel="stylesheet" type="text/css" href="./css/analog.css">
 	<style>
+		@font-face {
+			font-family: champagne;
+			src: url('./fonts/Champagne & Limousines Bold.ttf');
+		}
+
 		div, body, button, input {
 			-webkit-box-sizing: border-box;
 			-moz-box-sizing: border-box;
@@ -22,9 +27,23 @@
 			height: 100%;
 			text-align: center;
 		}
+
+		.menu {
+			text-align: left;
+			padding: 10px;
+			font-family: champagne;
+			font-size: 1em;
+		}
+
+		.menu a{
+			text-decoration: none;
+		}
 	</style>
 </head>
 <body>
+	<div class="menu">
+		Analog&nbsp;|&nbsp;<a href="./digital.html">Digital </a>
+	</div>
 	<div class="analog-clock">
 		<div class="analog-seconds"></div>
 		<div class="analog-minutes"></div>

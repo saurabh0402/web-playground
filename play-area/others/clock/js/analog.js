@@ -1,5 +1,5 @@
 (function(){
-	let hr, min, sec, hrSmall;
+	let hr, min, sec, hrSmall, timer;
 	const clock = document.getElementsByClassName("analog-clock")[0],
 		  divS = document.getElementsByClassName("analog-seconds")[0],
 		  divM = document.getElementsByClassName("analog-minutes")[0],
@@ -10,7 +10,7 @@
 		let temp = new Date(Date.now());
 		hr = temp.getHours();
 		min = temp.getMinutes();
-		sec = temp.getSeconds();
+		sec = temp.getSeconds() - 1; //Don't know why! But this fixes bug!
 		hrSmall = min*0.5;
 	}
 
@@ -25,6 +25,8 @@
 				min = 0;
 				hr += 1;
 				hrSmall = 0;
+				if(hr == 12)
+					hr = 0;
 			}
 		}
 	}
@@ -50,9 +52,20 @@
 	function change(){
 		update();
 		setAngle();
-		setTimeout(change, 1000);
+		timer = setTimeout(change, 1000);
 	}
 
-	init();
-	change();
+	window.onload = function(){
+		init();
+		setAngle();
+		timer = setTimeout(change, 1000);
+	}
+
+	window.onfocus = function(){
+		clearTimeout(timer);
+		init();
+		setAngle();
+		timer = setTimeout(change, 1000);
+	}
+
 })();
