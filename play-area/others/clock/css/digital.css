@@ -60,13 +60,3 @@
 	transform: translateY(-100%);
 	z-index: 5;
 }
-
-.shadow {
-	position: absolute;
-	background-color: rgba(0,0,0,0.5);
-	width: 500px;
-	height: 500px;
-	top: 0px;
-	left: 0px;
-	z-index: 10;
-}
