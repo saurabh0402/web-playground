@@ -15,7 +15,10 @@
 	function setTime(){
 		divS[cSec].innerHTML = sec < 10 ? '0'+sec : sec;
 		divS[cSec].className = "seconds-content active";
-		divS[(cSec+1)%2].className = "seconds-content";
+		divS[(cSec+1)%2].className = "seconds-content temp";
+		setTimeout(function(){
+			divS[(cSec+1)%2].className = "seconds-content";
+		}, 300);
 		divM[cMin].innerHTML = min < 10 ? '0'+min : min;
 		divM[cMin].className = "minutes-content active";
 		divM[(cMin+1)%2].className = "minutes-content";
@@ -35,13 +38,11 @@
 		timer = setTimeout(change, 1000);
 	}
 
-	window.onload = function(){
-		timer = setTimeout(change, 1000);
-	}
+	window.onload = change;
 
 	window.onfocus = function(){
 		clearTimeout(timer);
-		timer = setTimeout(change, 1000);
+		change();
 	}
 
 })();
