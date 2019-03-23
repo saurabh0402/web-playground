@@ -11,25 +11,30 @@
 	outline: none;
 	border: 3px solid rgba(51,102,153,1);
 	background-color: transparent;
-	padding: 12px 27px;
+	padding: 12px 25px;
 	position: relative;
+	overflow: hidden;
 }
 
-.buttonBack1 {
-	background-color: rgba(51,102,153,1);
+.aButton1 .buttonBack {
 	position: absolute;
-	width: 100%;
-	height: 0%;
-	left: 0px;
-	top: 100%;
-	z-index: 1;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+	width: 105%; /* To tackle some bug in Chrome */
+	height: 100%;
+	background-color: rgba(51,102,153,1);
+	top: 0px;
+	left: -105%;
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
 }
 
-.buttonFront1 {
+.aButton1:hover .buttonBack {
+	left: 0px;
+}
+
+.aButton1 .buttonFront {
 	position: relative;
+	width: 100%;
 	z-index: 10;
 	color: rgba(51,102,152,1);
 	-webkit-transition: color 0.3s;
@@ -37,12 +42,7 @@
 	transition: color 0.3s;
 }
 
-.aButton1:hover .buttonBack1 {
-	height: 100%;
-	top: 0%;
-}
-
-.aButton1:hover .buttonFront1 {
+.aButton1:hover .buttonFront {
 	color: white;
 }
 
@@ -54,29 +54,30 @@
 	outline: none;
 	border: 3px solid rgba(51,102,153,1);
 	background-color: transparent;
-	padding: 12px 27px;
+	padding: 12px 25px;
 	position: relative;
 	overflow: hidden;
 }
 
-.buttonBack2 {
-	background-color: rgba(51,102,153,1);
+.aButton2 .buttonBack {
 	position: absolute;
-	width: 150%;
-	height: 500%;
-	left: -130%;
-	top: 60%;
-	z-index: 1;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	transform: rotate(45deg);
+	width: 105%; /* To tackle some bug in Chrome */
+	height: 100%;
+	background-color: rgba(51,102,153,1);
+	top: 0px;
+	left: 105%;
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
 }
 
-.buttonFront2 {
+.aButton2:hover .buttonBack {
+	left: 0px;
+}
+
+.aButton2 .buttonFront {
 	position: relative;
+	width: 100%;
 	z-index: 10;
 	color: rgba(51,102,152,1);
 	-webkit-transition: color 0.3s;
@@ -84,12 +85,7 @@
 	transition: color 0.3s;
 }
 
-.aButton2:hover .buttonBack2 {
-	left: 0%;
-	top: -170%;
-}
-
-.aButton2:hover .buttonFront2 {
+.aButton2:hover .buttonFront {
 	color: white;
 }
 
@@ -101,29 +97,30 @@
 	outline: none;
 	border: 3px solid rgba(51,102,153,1);
 	background-color: transparent;
-	padding: 12px 27px;
+	padding: 12px 25px;
 	position: relative;
 	overflow: hidden;
 }
 
-.buttonBack3 {
-	background-color: rgba(51,102,153,1);
+.aButton3 .buttonBack {
 	position: absolute;
-	width: 150%;
-	height: 0%;
-	left: -40%;
-	top: 0%;
-	z-index: 1;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	transform: rotate(45deg);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(51,102,153,1);
+	top: -100%;
+	left: 0px;
+	-webkit-transition: top 0.3s;
+	-moz-transition: top 0.3s;
+	transition: top 0.3s;
 }
 
-.buttonFront3 {
+.aButton3:hover .buttonBack {
+	top: 0px;
+}
+
+.aButton3 .buttonFront {
 	position: relative;
+	width: 100%;
 	z-index: 10;
 	color: rgba(51,102,152,1);
 	-webkit-transition: color 0.3s;
@@ -131,13 +128,7 @@
 	transition: color 0.3s;
 }
 
-.aButton3:hover .buttonBack3 {
-	left: 0%;
-	height: 500%;
-	top: -170%;
-}
-
-.aButton3:hover .buttonFront3 {
+.aButton3:hover .buttonFront {
 	color: white;
 }
 
@@ -147,168 +138,39 @@
 
 .aButton4 {
 	outline: none;
-	border: none;
-	background-color: rgba(64,191,64,1);
-	padding: 15px 30px;
+	border: 3px solid rgba(51,102,153,1);
+	background-color: transparent;
+	padding: 12px 25px;
 	position: relative;
 	overflow: hidden;
 }
 
-.buttonFront4 {
-	position: relative;
-	z-index: 10;
-	color: white;
-	-webkit-transition: color 0.3s;
-	-moz-transition: color 0.3s;
-	transition: color 0.3s;
-}
-
-.divTop {
+.aButton4 .buttonBack {
 	position: absolute;
-	top: 0px;
-	left: 0px;
-	background-color: rgba(31,96,31,1);
-	height: 3px;
-	width: 0%;
-	-webkit-transition: width 0.3s;
-	-moz-transition: width 0.3s;
-	transition: width 0.3s;
-}
-
-.aButton4:hover .divTop {
 	width: 100%;
-}
-
-.divRight {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	background-color: rgba(31,96,31,1);
-	height: 0%;
-	width: 3px;
-	-webkit-transition: height 0.3s;
-	-moz-transition: height 0.3s;
-	transition: height 0.3s;
-}
-
-.aButton4:hover .divRight {
 	height: 100%;
-}
-
-.divBottom {
-	position: absolute;
-	bottom: 0px;
-	left: 100%;
-	background-color: rgba(31,96,31,1);
-	height: 3px;
-	width: 0%;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.aButton4:hover .divBottom {
-	width: 100%;
-	left: 0%;
-}
-
-.divLeft {
-	position: absolute;
+	background-color: rgba(51,102,153,1);
 	top: 100%;
 	left: 0px;
-	background-color: rgba(31,96,31,1);
-	height: 0%;
-	width: 3px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+	-webkit-transition: top 0.3s;
+	-moz-transition: top 0.3s;
+	transition: top 0.3s;
 }
 
-.aButton4:hover .divLeft {
-	height: 100%;
-	top: 0%;
-}
-
-/*
-	FIFTH EFFECT
-*/
-
-.aButton5 {
-	outline: none;
-	border: none;
-	background-color: rgba(64,191,64,1);
-	padding: 15px 30px;
-	position: relative;
-}
-
-.buttonBack5 {
-	width: 100%;
-	height: 100%;
-	background: transparent;
-	border: 3px solid rgba(31,96,31,1);
-	position: absolute;
+.aButton4:hover .buttonBack {
 	top: 0px;
-	left: 0px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
 }
 
-.buttonFront5 {
+.aButton4 .buttonFront {
 	position: relative;
+	width: 100%;
 	z-index: 10;
-	color: white;
+	color: rgba(51,102,152,1);
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
 	transition: color 0.3s;
 }
 
-.aButton5:hover .buttonBack5 {
-	top: -3px;
-	left: -3px;
-	width: calc(100% + 6px);
-	height: calc(100% + 6px);
-}
-
-/*
-	SIXTH EFFECT
-*/
-
-.aButton6 {
-	outline: none;
-	border: none;
-	padding: 0px;
-	background: transparent;
-	position: relative;
-}
-
-.buttonBack6 {
-	width: 100%;
-	height: 100%;
-	background: rgba(31,96,31,1);
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	-webkit-transition: top 0.3s, left 0.3s;
-	-moz-transition: top 0.3s, left 0.3s;
-	transition: top 0.3s, left 0.3s;
-}
-
-.buttonFront6 {
-	position: relative;
-	z-index: 10;
+.aButton4:hover .buttonFront {
 	color: white;
-	-webkit-transition: color 0.3s;
-	-moz-transition: color 0.3s;
-	transition: color 0.3s;
-	background-color: rgba(64,191,64,1);
-	padding: 15px 30px;
-	width: 100%;
-	height: 100%;
 }
-
-.aButton6:hover .buttonBack6 {
-	top: 4px;
-	left: 4px;
-}
-
