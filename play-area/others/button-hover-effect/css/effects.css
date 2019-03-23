@@ -174,3 +174,241 @@
 .aButton4:hover .buttonFront {
 	color: white;
 }
+
+/*
+	FIFTH EFFECT
+*/
+
+.aButton5 {
+	outline: none;
+	border: 3px solid rgba(51,102,153,1);
+	background-color: transparent;
+	padding: 12px 25px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton5 .buttonBack1 {
+	position: absolute;
+	width: 51%;
+	height: 100%;
+	background-color: rgba(51,102,153,1);
+	top: 0px;
+	left: -51%;
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+}
+
+.aButton5:hover .buttonBack1 {
+	left: 0px;
+}
+
+.aButton5 .buttonBack2 {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background-color: rgba(51,102,153,1);
+	top: 0px;
+	left: 100%;
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+}
+
+.aButton5:hover .buttonBack2 {
+	left: 50%;
+}
+
+.aButton5 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.aButton5:hover .buttonFront {
+	color: white;
+}
+
+/*
+	SIXTH EFFECT
+*/
+
+.aButton6 {
+	outline: none;
+	border: 3px solid rgba(51,102,153,1);
+	background-color: transparent;
+	padding: 12px 25px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton6 .buttonBack1 {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background-color: rgba(51,102,153,1);
+	top: -50%;
+	left: 0px;
+	-webkit-transition: top 0.3s;
+	-moz-transition: top 0.3s;
+	transition: top 0.3s;
+}
+
+.aButton6:hover .buttonBack1 {
+	top: 0px;
+}
+
+.aButton6 .buttonBack2 {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background-color: rgba(51,102,153,1);
+	top: 100%;
+	left: 0px;
+	-webkit-transition: top 0.3s;
+	-moz-transition: top 0.3s;
+	transition: top 0.3s;
+}
+
+.aButton6:hover .buttonBack2 {
+	top: 50%;
+}
+
+.aButton6 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.aButton6:hover .buttonFront {
+	color: white;
+}
+
+/*
+	SEVENTH EFFECT
+*/
+
+.aButton7 {
+	outline: none;
+	border: 3px solid rgba(51,102,153,1);
+	background-color: transparent;
+	padding: 12px 25px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton7 .buttonBack1 {
+	position: absolute;
+	width: 0px;
+	height: 100%;
+	background-color: rgba(51,102,153,1);
+	top: 0px;
+	left: 50%;
+	-webkit-transition: left 0.3s, width 0.3s;
+	-moz-transition: left 0.3s, width 0.3s;
+	transition: left 0.3s, width 0.3s;
+}
+
+.aButton7:hover .buttonBack1 {
+	left: 0px;
+	width: 50%;
+}
+
+.aButton7 .buttonBack2 {
+	position: absolute;
+	width: 0px;
+	height: 100%;
+	background-color: rgba(51,102,153,1);
+	top: 0px;
+	left: 50%;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+}
+
+.aButton7:hover .buttonBack2 {
+	width: 50%;
+}
+
+.aButton7 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.aButton7:hover .buttonFront {
+	color: white;
+}
+
+/*
+	EIGHTH EFFECT
+*/
+
+.aButton8 {
+	outline: none;
+	border: 3px solid rgba(51,102,153,1);
+	background-color: transparent;
+	padding: 12px 25px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton8 .buttonBack1 {
+	position: absolute;
+	width: 100%;
+	height: 0px;
+	background-color: rgba(51,102,153,1);
+	top: 51%;
+	left: 0px;
+	-webkit-transition: top 0.3s, height 0.3s;
+	-moz-transition: top 0.3s, height 0.3s;
+	transition: top 0.3s, height 0.3s;
+}
+
+.aButton8:hover .buttonBack1 {
+	top: 0px;
+	height: 51%;
+}
+
+.aButton8 .buttonBack2 {
+	position: absolute;
+	width: 100%;
+	height: 0px;
+	background-color: rgba(51,102,153,1);
+	top: 50%;
+	left: 0px;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+}
+
+.aButton8:hover .buttonBack2 {
+	height: 50%;
+}
+
+.aButton8 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.aButton8:hover .buttonFront {
+	color: white;
+}
