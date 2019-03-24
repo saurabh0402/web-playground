@@ -412,3 +412,175 @@
 .aButton8:hover .buttonFront {
 	color: white;
 }
+
+/*
+	NINTH EFFECT
+*/
+
+.aButton9 {
+	outline: none;
+	border: none;
+	background-color: #e3e3e3;
+	padding: 14px 27px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton9 .buttonBack {
+	position: absolute;
+	width: 105%;
+	height: 4px;
+	background-color: rgba(51,102,153,1);
+	bottom: 0px;
+	left: -105%;
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+}
+
+.aButton9:hover .buttonBack {
+	left: 0px;
+}
+
+.aButton9 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+/*
+	TENTH EFFECT
+*/
+
+.aButton10 {
+	outline: none;
+	border: none;
+	background-color: #e3e3e3;
+	padding: 14px 27px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton10 .buttonBack {
+	position: absolute;
+	width: 105%;
+	height: 4px;
+	background-color: rgba(51,102,153,1);
+	bottom: 0px;
+	left: 105%;
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+}
+
+.aButton10:hover .buttonBack {
+	left: 0px;
+}
+
+.aButton10 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+/*
+	ELEVENTH EFFECT
+*/
+
+.aButton11 {
+	outline: none;
+	border: none;
+	background-color: #e3e3e3;
+	padding: 14px 27px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton11 .buttonBottom, .aButton11 .buttonTop {
+	position: absolute;
+	width: 105%;
+	height: 4px;
+	background-color: rgba(51,102,153,1);
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+}
+
+.aButton11:hover .buttonBottom, .aButton11:hover .buttonTop {
+	left: 0px;
+}
+
+.aButton11 .buttonBottom {
+	bottom: 0px;
+	left: -105%;
+}
+
+.aButton11 .buttonTop {
+	top: 0px;
+	left: 105%;
+}
+
+.aButton11 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+/*
+	TWELFTH EFFECT
+*/
+
+.aButton12 {
+	outline: none;
+	border: none;
+	background-color: #e3e3e3;
+	padding: 14px 27px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton12 .buttonLeft, .aButton12 .buttonRight {
+	position: absolute;
+	width: 4px;
+	height: 105%;
+	background-color: rgba(51,102,153,1);
+	-webkit-transition: top 0.3s;
+	-moz-transition: top 0.3s;
+	transition: top 0.3s;
+}
+
+.aButton12:hover .buttonLeft, .aButton12:hover .buttonRight {
+	top: 0px;
+}
+
+.aButton12 .buttonLeft {
+	left: 0px;
+	top: -105%;
+}
+
+.aButton12 .buttonRight {
+	right: 0px;
+	top: 105%;
+}
+
+.aButton12 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
