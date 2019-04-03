@@ -551,7 +551,54 @@
 	overflow: hidden;
 }
 
-.aButton12 .buttonLeft, .aButton12 .buttonRight {
+.aButton12 .buttonBottom, .aButton12 .buttonTop {
+	position: absolute;
+	width: 105%;
+	height: 4px;
+	background-color: rgba(51,102,153,1);
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+}
+
+.aButton12:hover .buttonBottom, .aButton12:hover .buttonTop {
+	left: 0px;
+}
+
+.aButton12 .buttonBottom {
+	bottom: 0px;
+	left: 105%;
+}
+
+.aButton12 .buttonTop {
+	top: 0px;
+	left: -105%;
+}
+
+.aButton12 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+/*
+	THIRTEENTH EFFECT
+*/
+
+.aButton13 {
+	outline: none;
+	border: none;
+	background-color: #e3e3e3;
+	padding: 14px 27px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton13 .buttonLeft, .aButton13 .buttonRight {
 	position: absolute;
 	width: 4px;
 	height: 105%;
@@ -561,21 +608,210 @@
 	transition: top 0.3s;
 }
 
-.aButton12:hover .buttonLeft, .aButton12:hover .buttonRight {
+.aButton13:hover .buttonLeft, .aButton13:hover .buttonRight {
 	top: 0px;
 }
 
-.aButton12 .buttonLeft {
+.aButton13 .buttonLeft {
 	left: 0px;
 	top: -105%;
 }
 
-.aButton12 .buttonRight {
+.aButton13 .buttonRight {
 	right: 0px;
 	top: 105%;
 }
 
-.aButton12 .buttonFront {
+.aButton13 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+/*
+	FOURTEENTH EFFECT
+*/
+
+.aButton14 {
+	outline: none;
+	border: none;
+	background-color: #e3e3e3;
+	padding: 14px 27px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton14 .buttonLeft, .aButton14 .buttonRight {
+	position: absolute;
+	width: 4px;
+	height: 105%;
+	background-color: rgba(51,102,153,1);
+	-webkit-transition: top 0.3s;
+	-moz-transition: top 0.3s;
+	transition: top 0.3s;
+}
+
+.aButton14:hover .buttonLeft, .aButton14:hover .buttonRight {
+	top: 0px;
+}
+
+.aButton14 .buttonLeft {
+	left: 0px;
+	top: 105%;
+}
+
+.aButton14 .buttonRight {
+	right: 0px;
+	top: -105%;
+}
+
+.aButton14 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+/*
+	FIFTEENTH EFFECT
+*/
+
+.aButton15 {
+	outline: none;
+	border: none;
+	background-color: #e3e3e3;
+	padding: 14px 27px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton15 .buttonLeft, .aButton15 .buttonRight {
+	position: absolute;
+	width: 4px;
+	height: 105%;
+	background-color: rgba(51,102,153,1);
+	-webkit-transition: top 0.3s;
+	-moz-transition: top 0.3s;
+	transition: top 0.3s;
+}
+
+.aButton15:hover .buttonLeft, .aButton15:hover .buttonRight {
+	top: 0px;
+}
+
+.aButton15 .buttonLeft {
+	left: 0px;
+	top: 105%;
+}
+
+.aButton15 .buttonRight {
+	right: 0px;
+	top: -105%;
+}
+
+.aButton15 .buttonBottom, .aButton15 .buttonTop {
+	position: absolute;
+	width: 105%;
+	height: 4px;
+	background-color: rgba(51,102,153,1);
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+}
+
+.aButton15:hover .buttonBottom, .aButton15:hover .buttonTop {
+	left: 0px;
+}
+
+.aButton15 .buttonBottom {
+	bottom: 0px;
+	left: 105%;
+}
+
+.aButton15 .buttonTop {
+	top: 0px;
+	left: -105%;
+}
+
+.aButton15 .buttonFront {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	color: rgba(51,102,152,1);
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+/*
+	SIXTEENTH EFFECT
+*/
+
+.aButton16 {
+	outline: none;
+	border: none;
+	background-color: #e3e3e3;
+	padding: 14px 27px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aButton16 .buttonLeft, .aButton16 .buttonRight {
+	position: absolute;
+	width: 4px;
+	height: 105%;
+	background-color: rgba(51,102,153,1);
+	-webkit-transition: top 0.3s;
+	-moz-transition: top 0.3s;
+	transition: top 0.3s;
+}
+
+.aButton16:hover .buttonLeft, .aButton16:hover .buttonRight {
+	top: 0px;
+}
+
+.aButton16 .buttonLeft {
+	left: 0px;
+	top: -105%;
+}
+
+.aButton16 .buttonRight {
+	right: 0px;
+	top: 105%;
+}
+
+.aButton16 .buttonBottom, .aButton16 .buttonTop {
+	position: absolute;
+	width: 105%;
+	height: 4px;
+	background-color: rgba(51,102,153,1);
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+}
+
+.aButton16:hover .buttonBottom, .aButton16:hover .buttonTop {
+	left: 0px;
+}
+
+.aButton16 .buttonBottom {
+	bottom: 0px;
+	left: -105%;
+}
+
+.aButton16 .buttonTop {
+	top: 0px;
+	left: 105%;
+}
+
+.aButton16 .buttonFront {
 	position: relative;
 	width: 100%;
 	z-index: 10;
